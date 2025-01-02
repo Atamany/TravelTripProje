@@ -24,6 +24,10 @@ namespace TravelTripProje.Controllers
         {
             by.Deger1 = c.Blogs.Where(x => x.ID == id).ToList();
             by.Deger2 = c.Yorumlars.Where(x => x.BlogId == id).ToList();
+            by.Deger3 = c.Blogs.
+                OrderByDescending(x => x.ID).
+                Take(3).
+                ToList();
             return View(by);
         }
     }
