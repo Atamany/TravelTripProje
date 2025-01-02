@@ -1,5 +1,4 @@
-﻿@using TravelTripProje.Models.Siniflar
-@model List<Blog>
+﻿@model TravelTripProje.Models.Siniflar.BlogYorum
 @{
     ViewBag.Title = "BlogDetay";
     Layout = "~/Views/Shared/_TestLayout.cshtml";
@@ -38,25 +37,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="col-md-8 single-main">
                 <div class="single-grid">
-                    @foreach (var x in Model)
+                    @foreach (var x in Model.Deger1)
                     {
                         <img src="@x.BlogImage" alt="" style="margin-bottom:20px;" />
                         <h2>@x.Baslik</h2>
                         <p>
-                           @x.Aciklama
+                            @x.Aciklama
                         </p>
 
                     }
                 </div>
-                <ul class="comment-list">
-
-                    <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
-                    <div class="desc">
-                        <p>Mehmet Yücedağ: Yorum Yazacak!</a></p>
-                    </div>
-                    <div class="clearfix"></div>
-                    </li>
-                </ul>
+                @foreach (var y in Model.Deger2)
+                {
+                    <ul class="comment-list">
+                        <li>
+                            <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
+                            <div class="desc">
+                                <p>@y.KullaniciAdi: @y.Yorum</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                }
                 <div class="content-form">
                     <h3>Yorum Yap</h3>
                     <form>
@@ -70,16 +72,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             <div class="col-md-4 side-content">
                 <div class="recent">
-                    <h3>RECENT POSTS</h3>
-                    <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
-                    </ul>
+                    <h3>Son Bloglar</h3>
+                    @foreach (var y in Model.Deger3)
+                    {
+                        <ul>
+                            <li><a href="/Blog/BlogDetay/@y.ID">@y.Baslik</a></li>
+                        </ul>
+                    }
                 </div>
                 <div class="comments">
-                    <h3>RECENT COMMENTS</h3>
+                    <h3>Son Yorumlar</h3>
                     <ul>
                         <li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
                         <li><a href="#">Peter Doe </a> on <a href="#"> Photography</a></li>
@@ -88,6 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>
 

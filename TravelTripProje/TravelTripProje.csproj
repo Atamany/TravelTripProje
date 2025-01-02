@@ -139,6 +139,7 @@
     <Compile Include="Models\Siniflar\AdresBlog.cs" />
     <Compile Include="Models\Siniflar\AnaSayfa.cs" />
     <Compile Include="Models\Siniflar\Blog.cs" />
+    <Compile Include="Models\Siniflar\BlogYorum.cs" />
     <Compile Include="Models\Siniflar\Context.cs" />
     <Compile Include="Models\Siniflar\Hakkinda.cs" />
     <Compile Include="Models\Siniflar\Iletisim.cs" />
@@ -259,6 +260,8 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\BlogDetay.cshtml" />
+    <Content Include="Views\Default\Partial1.cshtml" />
+    <Content Include="Views\Default\Partial2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
