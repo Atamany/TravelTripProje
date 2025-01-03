@@ -30,5 +30,21 @@ namespace TravelTripProje.Controllers
                 ToList();
             return View(by);
         }
+        public ActionResult YorumYap() { 
+            return PartialView();
+        }
+        [HttpGet]
+        public PartialViewResult YorumYap(int id)
+        {
+            ViewBag.deger = id;
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult YorumYap(Yorumlar yorum)
+        {
+            c.Yorumlars.Add(yorum);
+            c.SaveChanges();
+            return PartialView();
+        }
     }
 }
