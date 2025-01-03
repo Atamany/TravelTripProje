@@ -50,6 +50,11 @@ namespace TravelTripProje.Controllers
             return RedirectToAction("Index");
 
         }
+        public ActionResult YorumListesi()
+        {
+            var yorumlar = c.Yorumlars.ToList();
+            return View(yorumlar);
+        }
 
     }
 }
