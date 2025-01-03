@@ -39,8 +39,14 @@ namespace TravelTripProje.Controllers
         [HttpPost]
         public PartialViewResult YorumYap(Yorumlar y)
         {
-            c.Yorumlars.Add(y);
-            c.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                c.Yorumlars.Add(y);
+                c.SaveChanges();
+
+                ViewBag.RedirectUrl = Url.Action("BlogDetay", "Blog", new { id = y.BlogId });
+            }
+
             return PartialView();
         }
     }

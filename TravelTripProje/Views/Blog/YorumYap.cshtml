@@ -1,5 +1,11 @@
 ﻿@model TravelTripProje.Models.Siniflar.Yorumlar
 
+@if (ViewBag.RedirectUrl != null)
+{
+    <script>
+        window.location.href = "@ViewBag.RedirectUrl";
+    </script>
+}
 ﻿<div class="content-form">
     <h3>Yorum Yap</h3>
     <form method="post">
