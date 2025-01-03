@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 
 <head>
-    <title> Tatil/Seyahat Bloği Giriş Formu</title>
+    <title> Tatil/Seyahat Bloğu Giriş Formu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
@@ -26,16 +26,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <div class="padding-all">
         <div class="header">
-            <h1>Master  Login Form</h1>
+            <h1>Tatil/Seyahat Bloğu Giriş Formu</h1>
         </div>
 
         <div class="design-w3l">
             <div class="mail-form-agile">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Kullanıcı Adı" required="" />
-                    <input type="password" name="password" class="padding" placeholder="Şifre" required="" />
+                @using(Html.BeginForm("Login", "GirisYap", FormMethod.Post)) { 
+                    <input type="text" name="Kullanici" placeholder="Kullanıcı Adı" required="" />
+                    <input type="password" name="Sifre" class="padding" placeholder="Şifre" required="" />
                     <input type="submit" value="Giriş Yap!">
-                </form>
+                }
             </div>
             <div class="clear"> </div>
         </div>
