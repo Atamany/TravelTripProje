@@ -30,9 +30,6 @@ namespace TravelTripProje.Controllers
                 ToList();
             return View(by);
         }
-        public ActionResult YorumYap() { 
-            return PartialView();
-        }
         [HttpGet]
         public PartialViewResult YorumYap(int id)
         {
@@ -40,9 +37,9 @@ namespace TravelTripProje.Controllers
             return PartialView();
         }
         [HttpPost]
-        public PartialViewResult YorumYap(Yorumlar yorum)
+        public PartialViewResult YorumYap(Yorumlar y)
         {
-            c.Yorumlars.Add(yorum);
+            c.Yorumlars.Add(y);
             c.SaveChanges();
             return PartialView();
         }
