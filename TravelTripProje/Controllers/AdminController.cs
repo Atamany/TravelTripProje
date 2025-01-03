@@ -16,6 +16,7 @@ namespace TravelTripProje.Controllers
             var degerler = c.Blogs.ToList();
             return View(degerler);
         }
+        [Authorize]
         [HttpGet]
         public ActionResult YeniBlog()
         {
@@ -28,6 +29,7 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        [Authorize]
         public ActionResult BlogSil(int id)
         {
             var blog = c.Blogs.Find(id);
@@ -35,11 +37,13 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        [Authorize]
         public ActionResult BlogGetir(int id)
         {
             var blog = c.Blogs.Find(id);
             return View("BlogGetir", blog);
         }
+        [Authorize]
         public ActionResult BlogGuncelle(Blog blog)
         {
             var blg = c.Blogs.Find(blog.ID);
@@ -51,11 +55,13 @@ namespace TravelTripProje.Controllers
             return RedirectToAction("Index");
 
         }
+        [Authorize]
         public ActionResult YorumListesi()
         {
             var yorumlar = c.Yorumlars.ToList();
             return View(yorumlar);
         }
+        [Authorize]
         public ActionResult YorumSil(int id)
         {
             var yorum = c.Yorumlars.Find(id);
@@ -63,11 +69,13 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return RedirectToAction("YorumListesi");
         }
+        [Authorize]
         public ActionResult YorumGetir(int id)
         {
             var yr = c.Yorumlars.Find(id);
             return View("YorumGetir", yr);
         }
+        [Authorize]
         public ActionResult YorumGuncelle(Yorumlar y)
         {
             var yrm = c.Yorumlars.Find(y.ID);
