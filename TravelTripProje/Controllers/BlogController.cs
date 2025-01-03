@@ -16,7 +16,7 @@ namespace TravelTripProje.Controllers
             by.Deger1 = c.Blogs.ToList();
             by.Deger3 = c.Blogs.
                 OrderByDescending(x => x.ID).
-                Take(3).
+                Take(10).
                 ToList();
             return View(by);
         }
@@ -26,7 +26,7 @@ namespace TravelTripProje.Controllers
             by.Deger2 = c.Yorumlars.Where(x => x.BlogId == id).ToList();
             by.Deger3 = c.Blogs.
                 OrderByDescending(x => x.ID).
-                Take(3).
+                Take(10).
                 ToList();
             return View(by);
         }

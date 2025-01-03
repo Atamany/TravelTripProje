@@ -138,13 +138,11 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
-    <Compile Include="Models\Siniflar\AdresBlog.cs" />
     <Compile Include="Models\Siniflar\AnaSayfa.cs" />
     <Compile Include="Models\Siniflar\Blog.cs" />
     <Compile Include="Models\Siniflar\BlogYorum.cs" />
     <Compile Include="Models\Siniflar\Context.cs" />
     <Compile Include="Models\Siniflar\Hakkinda.cs" />
-    <Compile Include="Models\Siniflar\Iletisim.cs" />
     <Compile Include="Models\Siniflar\Yorumlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
