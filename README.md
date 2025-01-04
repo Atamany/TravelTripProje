@@ -4,16 +4,16 @@
 <p> 🏷️ Murat Yücedağ tarafından YouTube platformunda yayınlanan "50 Derste Asp.Net Mvc ile Tatil & Seyahat Sitesi" eğitimi kapsamında tamamladığım 1. proje.</p>
 
 <h3>Ana Sayfa</h3>
-<img src="https://github.com/user-attachments/assets/f1ce1a3d-dd5b-422e-89f7-6cfd663733bc" title="Ana Sayfa" alt="Ana Sayfa">
+<img src="https://github.com/user-attachments/assets/9a847041-9a55-4dd1-b231-1b9097c20047" title="Ana Sayfa" alt="Ana Sayfa">
 
 <h3>Hakkında</h3>
 <img src="https://github.com/user-attachments/assets/25334e1d-a2e1-4adb-aed3-aff6ee0f3b7b" title="Hakkında" alt="Hakkında">
 
 <h3>Blog</h3>
-<img src="https://github.com/user-attachments/assets/b40730a5-7403-467b-a0ca-62250186de5d" title="Blog" alt="Blog">
+<img src="https://github.com/user-attachments/assets/61bcfbf6-f983-4e38-8088-d0024b5542d4" title="Blog" alt="Blog">
 
 <h3>Blog Akış</h3>
-<img src="https://github.com/user-attachments/assets/044d1c45-7b80-46b4-a439-33208a6791ea" title="Blog Akış" alt="Blog Akış">
+<img src="https://github.com/user-attachments/assets/9d13d45f-0371-4689-99f2-ab370cc91610" title="Blog Akış" alt="Blog Akış">
 
 <h3>Giriş Ekranı</h3>
 <img src="https://github.com/user-attachments/assets/0c8daf0c-aafa-4ef0-96e8-082e3d558b0c" title="Giriş Ekranı" alt="Giriş Ekranı">
