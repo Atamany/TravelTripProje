@@ -54,11 +54,11 @@
                     </div>
                     <div class="header_bottom_right_images">
 
-                        <div class="slider" style="width:650px; height:365px;">
+                        <div class="slider">
                             <ul class="rslides" id="slider1">
                                 @foreach (var x in Model)
                                 {
-                                    <li><img src="@x.BlogImage" alt=""></li>
+                                    <li><img src="@x.BlogImage" alt="" style="width:650px; height:365px;"></li>
                                 }
                             </ul>
                         </div>
